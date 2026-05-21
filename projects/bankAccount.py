@@ -7,9 +7,12 @@ class BankAccount:
         print("Deposite Amount: ",amount)
         print("Current Balance: ", self.amount)
     def withdraw(self,withdraw):
-        self.amount -= withdraw
-        print("You withdraw amount: ",withdraw)
-        print("Current Balance: ", self.amount)
+        if withdraw > self.amount:
+            print("Insufficient Balance!")
+        else:
+            self.amount -= withdraw
+            print("You withdraw amount: ",withdraw)
+            print("Current Balance: ", self.amount)
 
     def show_balance(self):
         print("Your balance is: ",self.amount)
