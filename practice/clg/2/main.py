@@ -12,4 +12,7 @@ print("Original Matrix:")
 print(matrix)
 
 print("\nOne-Dimensional Array:")
-print(arr)
+print(arr,"\n\n")
+
+for i in matrix:
+    print(i)
